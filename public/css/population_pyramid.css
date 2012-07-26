@@ -49,6 +49,18 @@ line.tick {
     fill: gray;
 }
 
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: #777;
+}
+
 .panelHeader {
     font-size: 14px;
     stroke: none;
@@ -89,14 +101,6 @@ line.tick {
 
 .header {
     text-align: center;
-}
-
-#footer {
-    color: #777;
-}
-
-#footer a {
-    color: black;
 }
 
 input.search-query {

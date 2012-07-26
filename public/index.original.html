@@ -1,23 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<title>Canadian Population Pyramids</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=9">
-	<meta name="description" content="Population Pyramids showing age profiles and comparisons for any region of Canada.">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="/css/population_pyramid.css" />
-	<script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-69155-30']);
-	  _gaq.push(['_trackPageview',window.location.pathname+window.location.hash]);
+    <title>Canadian Population Pyramids</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="description" content="Population Pyramids showing age profiles and comparisons for any region of Canada.">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/population_pyramid.css" />
+    <script type="text/javascript">
 
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-69155-30']);
+        _gaq.push(['_trackPageview',window.location.pathname+window.location.hash]);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
 <body>
 <div class="container">
@@ -29,12 +29,12 @@
                     <button type="button" class="btn btn-small btn-primary" href="#" onclick="$('#info').toggle()"><i class="icon-info-sign icon-white"></i>&nbsp;<b>Info</b></button>
                 </span>
                 <span style="position: relative;">
-                    <input type="text" class="search-query" id="select_main" tabindex="1" />
+                    <input type="text" class="search-query" id="select_main" tabindex="1" autocorrect="off" autocapitalize="off" />
                     <span style="position: absolute; left: 270px; top: 4px; color: #bbb; font-weight: normal; font-size: 12px;">filled bars</span>
                 </span>
                 <span class="brand" style="color: gray;">compared to</span>
                 <span style="position: relative;">
-                    <input type="text" class="search-query" id="select_compare" tabindex="2"/>
+                    <input type="text" class="search-query" id="select_compare" tabindex="2" autocorrect="off" autocapitalize="off" />
                     <span style="position: absolute; left: 305px; top: 4px; color: #bbb; font-weight: normal; font-size: 12px;">line</span>
                 </span>
                 <span id="share" style="position: absolute; top: 14px; right: 0px; width: 65px;">
@@ -100,14 +100,11 @@
             <div id="chart"></div>
         </div>
     </div>
-    <hr/>
-    <footer id="footer">
-        <p>
-            &copy; 2012
-            <a href="http://larsgrammel.de">Lars Grammel</a> <a href="http://twitter.com/lgrammel">@lgrammel</a>
-            and <a href="http://www.jamiestarke.com/">Jamie Starke</a> <a href="http://twitter.com/jamiestarke">@jamiestarke</a>.
-            Data from <a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/tbt-tt/Lp-eng.cfm?LANG=E&APATH=3&DETAIL=0&DIM=0&FL=A&FREE=0&GC=0&GID=0&GK=0&GRP=1&PID=0&PRID=0&PTYPE=101955&S=0&SHOWALL=0&SUB=0&Temporal=2011&THEME=88&VID=0&VNAMEE=&VNAMEF=">Statistics Canada 2011 Census</a>.
-        </p>
+    <footer>
+        &copy; 2012
+        <a href="http://larsgrammel.de">Lars Grammel</a> <a href="http://twitter.com/lgrammel">@lgrammel</a>
+        and <a href="http://www.jamiestarke.com/">Jamie Starke</a> <a href="http://twitter.com/jamiestarke">@jamiestarke</a>.
+        Data from <a href="http://www12.statcan.gc.ca/census-recensement/2011/dp-pd/tbt-tt/Lp-eng.cfm?LANG=E&APATH=3&DETAIL=0&DIM=0&FL=A&FREE=0&GC=0&GID=0&GK=0&GRP=1&PID=0&PRID=0&PTYPE=101955&S=0&SHOWALL=0&SUB=0&Temporal=2011&THEME=88&VID=0&VNAMEE=&VNAMEF=">Statistics Canada 2011 Census</a>.
     </footer>
 </div>
 <script src="/js/modernizr.min.js"></script>
